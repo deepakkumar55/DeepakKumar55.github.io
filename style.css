@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 1s;
 
 }
 html,body{
@@ -408,7 +407,7 @@ html,body{
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  height:80vh;
+  height:70vh;
   width: 100%;
   display: flex;
   position: relative;
@@ -447,12 +446,12 @@ flex-direction: column;
   font-size: 1.8vw;
 }
 #Contacts h2{
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-weight: 500;
   letter-spacing: 1px;
 }
 #Contacts h2 span{
-  font-size: 1.5;
+  font-size: 2;
   font-weight: 600;
 }
 

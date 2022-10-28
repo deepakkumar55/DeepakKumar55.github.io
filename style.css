@@ -466,22 +466,6 @@ flex-direction: column;
   #nav-left h1{
     font-size: 8vw;
   }
-  #Home{
-    background-color: red;
-  }
-  #About{
-    background-color: yellow;
-  }
-  #Resume{
-    background-color: blue;
-  }
-  
-  #Project{
-    background-color: green;
-  }
-  #Contacts{
-    background-color: yellow;
-  }
   #Home-main{
     flex-direction: column;
   }

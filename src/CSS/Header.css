@@ -1,0 +1,91 @@
+* {
+    background-color: transparent;
+}
+
+.header {
+    position: fixed;
+    transform: translate(-50%,-50%);
+    right: 0;
+    top: 50%;
+    z-index: 997;
+    padding: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Make the nav-list relative */
+}
+
+.nav-item {
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    transition: .3s;
+    margin: 10px 0;
+    border-radius: 50%;
+    background: #2b2a2a;
+    cursor: pointer;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    position: relative; /* Make the nav-link relative */
+}
+
+.icon {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.name {
+    z-index: -1; /* Move below other elements */
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    display: none; /* Initially hidden */
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #fff;
+    transition: all .3s;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+/* Show name on hover */
+.nav-item:hover .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1; 
+    opacity: 1;
+    left: -150px;
+}
+
+.nav-item:hover{
+    background: #FFB400;
+
+}
+
+
+
+.active {
+    color: #fff;
+    background-color: #FFB400;
+}

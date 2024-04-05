@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+
+body {
+    font-family: 'Cutive Mono';
+    background-color: rgba(0, 0, 0, 1.00);
+    color: rgba(255, 255, 255, 1.00);
+}
+
+body * {
+    z-index: 20;
+    color: rgba(0, 0, 0, 1.00);
+}
+
+.text-container {
+    position: relative;
+    width: 80%;
+    top: 50px;
+    float: right;
+}
+
+header {
+    font-family: 'Old Standard TT', serif;
+    font-size: 200%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    font-size: 20px;
+    height: 20px;
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'Old Standard TT', serif;
+    font-weight: 400;
+    margin: 0px;
+    margin-top: -10px;
+}
+
+h4 {
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0px;
+    margin-top: -15px;
+}
+
+.section {
+    margin: 10px;
+    margin-left: 2%;
+    width: 35%;
+}
+
+#experience {
+    float: left;
+}
+
+#education {
+    float: left;
+}
+
+#skills {
+    float: left;
+}
+
+#about {
+    float: left;
+}
+
+#contact {
+    float: left;
+}
+
+/* Flashlight Effect */
+#light {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background-color: #fff;
+    z-index: 10;
+    -webkit-box-shadow: inset 0px 0px 150px 166px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 150px 166px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 150px 166px rgba(0, 0, 0, 1);
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

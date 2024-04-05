@@ -1,0 +1,128 @@
+.home-content {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem 2rem; */
+    background-color: #111111;
+    color: white;
+    /* padding: 1rem 5rem 1rem 3rem; */
+    width: 100%;
+    height: 100vh;
+}
+
+.left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB400;
+    width: 40%;
+    height: 100vh;
+    border-radius: 0rem 400rem 100rem 0rem;
+}
+
+.left-content img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 60%;
+    padding: 1rem 5rem 1rem 3rem;   }
+
+/* .shape {
+    width: 96px;
+    box-sizing: content-box;
+    height: 48px;
+    background: #000;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 2px 2px 50px 2px;
+    border-radius: 100%;
+    position: relative;
+  }
+  .shape:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #000;
+    border: 18px solid yellow;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    box-sizing: content-box;
+  }
+  .shape:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: yellow;
+    border: 18px solid #000;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    box-sizing: content-box;
+  } */
+
+
+.home-content h1 {
+    color: #FFB400;
+    font-size: 51px;
+    line-height: 62px;
+    font-weight: 700;
+    margin: 18px 0 10px;
+    position: relative;
+    padding-left: 100px;
+}
+
+/* i need span tag in another line */
+
+.home-content h1 span {
+    color: #fff;
+    display: block;
+}
+
+
+.home-content p {
+    width: 80%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 18px 0 10px;
+    position: relative;
+    padding-left: 50px;
+    font-family: Open Sans, sans-serif;
+
+}
+
+/* Button */
+/* App.css */
+
+
+
+
+.social-icons {
+    margin-top: 10px;
+    padding-left: 50px;
+    left: 50%;
+    transform: translateX(150%);
+}
+
+.social-icons a {
+    color: #333333;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+    /* Change to your desired hover color */
+}
+

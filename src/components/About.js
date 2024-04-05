@@ -37,7 +37,7 @@ const About = () => {
             <li>Developed proficiency in Data Structures, DBMS, Basic Linux, and Java while contributing to real-world projects, thriving in a collaborative, remote environment, and receiving mentorship from industry professionals, poised to leverage gained expertise for future endeavors in software engineering.</li><br /><br />
             <h2 id="resumeh2">Growth Manager at Preplnsta</h2><br />
             <h3 id="resumeh3">PrepInsta · Internship</h3> <br />
-            <h4 id="resumeh4">Sep 2023 - Present </h4><br />
+            <h4 id="resumeh4">may 2023 - oct 2023 </h4><br />
             <li>As a Growth Manager Intern at PrepInsta, facilitated strategic growth initiatives and executed marketing campaigns to enhance brand presence and engagement.</li><br /><br />
             <h2 id="resumeh2">virtual internships at CISCO</h2><br />
             <h3 id="resumeh3">CISCO VIRTUAL INTERNSHIP PROGRAM 2022 · Internship</h3> <br />

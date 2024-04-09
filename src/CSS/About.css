@@ -1,7 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
 @import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
 
-body {
+.About-h1{
+    font-family: 'Old Standard TT', serif;
+    font-size: 200%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
+/* body {
     font-family: 'Cutive Mono';
     background-color: rgba(0, 0, 0, 1.00);
     color: rgba(255, 255, 255, 1.00);
@@ -11,6 +21,10 @@ body {
 body *{
     z-index: 20;
     color: rgba(0, 0, 0, 1.00);
+} */
+
+#resumewrap{
+    color: #fff;
 }
 
 .text-container {
@@ -80,7 +94,7 @@ h4 {
 }
 
 /* Flashlight Effect */
-#light {
+/* #light {
     position: absolute;
     width: 800px;
     height: 800px;
@@ -100,4 +114,4 @@ h4 {
     transform: scale(1.1);
   }
 }
-
+ */

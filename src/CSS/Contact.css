@@ -1,111 +1,294 @@
-.Main-Div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+/* Additional CSS for enhanced design */
+
+/* Form input icons */
+.form-group i {
+  margin-right: 10px;
+  color: #bbb;
+  /* Adjust color as needed */
 }
 
-.Conatct-Details{
+/* Hover effect for form inputs */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #fff;
+  /* Change border color on focus */
+}
+
+/* Hover effect for submit button */
+.send-button:hover {
+  background-color: #fff;
+  /* Change background color on hover */
+  color: #000;
+  /* Change text color on hover */
+  border-color: transparent;
+  /* Remove border on hover */
+}
+
+/* Success message */
+.success-msg {
+  color: #00FF00;
+  /* Green color for success message */
+}
+
+/* Error message */
+.error-msg {
+  color: #FF0000;
+  /* Red color for error message */
+}
+
+/* Body styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  padding-bottom: 100px;
+}
+
+/* Section styling */
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+/* Section header styling */
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+/* Contact form wrapper */
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+/* Contact form styling */
+.form-horizontal {
+  max-width: 400px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+/* Form input and textarea styling */
+.form-control,
+textarea {
+  max-width: 400px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Send button styling */
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+/* Alternative send button styling */
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Send text styling */
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Direct contact container styling */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Contact list styling */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+/* List item styling */
+.list-item {
+  line-height: 2;
+  color: #aaa;
+}
+
+/* Contact text styling */
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+/* Place styling */
+.place {
+  margin-left: 62px;
+}
+
+/* Phone styling */
+.phone {
+  margin-left: 56px;
+}
+
+/* Gmail styling */
+.gmail {
+  margin-left: 53px;
+}
+
+/* Contact text link styling */
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+/* Contact text link hover styling */
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Social media list styling */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Social media list item styling */
+.social-media-list li a {
+  color: #fff;
+}
+
+/* Social media list item styling */
+.social-media-list li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27, 27, 27);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Social media list item hover styling */
+.social-media-list li:hover {
+  background-color: #fff;
+}
+
+/* Social media list item hover styling */
+.social-media-list li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+/* Social media list item hover styling */
+.social-media-list li:hover a {
+  color: #000;
+}
+
+/* Copyright styling */
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Horizontal rule styling */
+hr {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  }
+
+  .direct-contact-container,
+  .form-horizontal {
+    margin: 0 auto;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
 }
 
-.Contact-Details h1{
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 20px;
-}
+/* Media query for even smaller screens */
+@media screen and (max-width: 569px) {
 
-.Contact-Details p{
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #fff;
-    margin-bottom: 20px;
-}
+  .direct-contact-container,
+  .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
 
-.Contact-Details a{
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #fff;
-    margin-bottom: 20px;
-}
+  .form-control,
+  textarea {
+    margin: 0 auto;
+  }
 
-.Contact-Details a:hover{
-    color: #007bff;
-}
+  .name,
+  .email,
+  textarea {
+    width: 280px;
+  }
 
-.Send-Email{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
 
-.Send-Email h1{
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 20px;
-}
+  .social-media-list {
+    left: 0;
+  }
 
-.Send-Email p{
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #fff;
-    margin-bottom: 20px;
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
 }
-
-.Send-Email form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.Send-Email input{
-    width: 50%;
-    height: 40px;
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #fff;
-}
-
-.Send-Email textarea{
-    width: 50%;
-    height: 200px;
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #fff;
-}
-
-.Send-Email button{
-    width: 50%;
-    height: 40px;
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-}
-
-.Send-Email button:hover{
-    background-color: #0056b3;
-    color: #fff;
-}
-

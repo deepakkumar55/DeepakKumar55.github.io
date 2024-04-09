@@ -1,25 +1,26 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../CSS/About.css'; // Import Resume component styling
 
 const About = () => {
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      const lightElement = document.getElementById('light');
-      lightElement.style.top = `${event.pageY - 250}px`;
-      lightElement.style.left = `${event.pageX - 300}px`;
-    };
+  // useEffect(() => {
+  //   const handleMouseMove = (event) => {
+  //     const lightElement = document.getElementById('light');
+  //     lightElement.style.top = `${event.pageY - 250}px`;
+  //     lightElement.style.left = `${event.pageX - 300}px`;
+  //   };
 
-    document.addEventListener('mousemove', handleMouseMove);
+  //   document.addEventListener('mousemove', handleMouseMove);
 
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('mousemove', handleMouseMove);
+  //   };
+  // }, []);
 
   return (
     <div>
       <div id='light'></div>
       <div id="resumewrap">
+        <h1 id="About-h1">About Me</h1>
       <div class="text-container" align="left">
           <div id="experience" class="section">
             <header id="resumeheader">Experience </header>
